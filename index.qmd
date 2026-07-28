@@ -1,7 +1,7 @@
 ---
 title: "Brooke Proctor"
 subtitle: "M.S. Data Science · Willamette University"
-image: images/profile.png
+image: images/profile.jpg
 about:
   template: trestles
   image-shape: round
