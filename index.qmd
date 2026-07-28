@@ -1,6 +1,6 @@
 ---
-title: "Blitz Bearcat"
-subtitle: "M.S. Data Science Candidate · Willamette University"
+title: "Brooke Proctor"
+subtitle: "M.S. Data Science · Willamette University"
 image: images/profile.png
 about:
   template: trestles
@@ -9,29 +9,38 @@ about:
   links:
     - icon: github
       text: GitHub
-      href: https://github.com/your_github_username
+      href: https://github.com/b-l-proctor
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/your_github_username
+      href: https://www.linkedin.com/in/brooke-proctor/
     - icon: envelope
       text: Email
-      href: mailto:you@willamette.edu
+      href: mailto:brookeproctor123@gmail.com
     - icon: file-earmark-pdf
       text: Resume
       href: resume.qmd
 ---
 
-I build data pipelines and turn messy data into decisions people can act on.
+I transform messy, large data into comprehensive stories and actionable insights.
 Right now I am finishing my M.S. in Data Science at **Willamette University**,
-where my capstone [predicts \[your one-line problem\]](capstone.qmd) for
-\[your stakeholder\].
+where my capstone [addresses and predicts rising stream temperatures in Salem, Oregon](capstone.qmd) for the City of Salem.
 
-I care about \[topics you actually care about — e.g. housing, health equity,
-sports analytics\], reproducible workflows, and explaining a model to the person
-who has to trust it.
+To get into more details, I am an emerging data scientist specializing in environmental data analysis. I am interested in using data science for positive change. I focus my work on community, viewing collaboration as not only helpful but also necessary. My experience includes scientific research, spatial data, data quality, and survey design and analysis. 
 
-**Currently looking for** \[data analyst / data scientist / ML engineer\] roles
-starting \[month year\]. [Get in touch](about.qmd) or grab my
+Specialties:
+
+- Languages: Python, R
+
+- Software: ArcGIS, QGIS, PIX4D, Global Mapper Pro, Cloud Compare, Power BI, Microsoft Excel
+
+- Problem Solving: Investigative approach, breaking down complex challenges, detail-oriented execution
+
+- Leadership & Collaboration: Team organization, clear communication, mentorship
+
+- Values: Community-focused solutions, ethical AI development
+
+**Currently looking for** data analyst / data scientist roles
+starting September 1st, 2026. [Get in touch](about.qmd) or grab my
 [resume](resume.qmd).
 
 ---

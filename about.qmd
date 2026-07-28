@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 image: images/profile.png
 about:
   template: solana
@@ -7,17 +7,14 @@ about:
   image-width: 12em
 ---
 
-## Hi, I'm Blitz 👋
+## Hi, I'm Brooke!
 
 The home page is the ten-second version. This is the longer story — write it in
 your own voice.
 
-I came to data science from \[your path: a major, a job, a question that would
-not leave you alone\]. What keeps me here is \[the part of the work you genuinely
-enjoy — the modeling, the wrangling, the moment a chart makes something click\].
+I came to data science from environmental science. What keeps me here is modeling, wrangling, and untangling of the puzzles of data.
 
-At Willamette my focus has been \[your emphasis: forecasting, causal inference,
-NLP, data engineering, ...\]. My [capstone](capstone.qmd) is where that comes
+At Willamette my focus has been spatial data visualizations and statistics, while picking up skills about data engineering and. My [capstone](capstone.qmd) is where that comes
 together.
 
 ### Beyond the terminal
