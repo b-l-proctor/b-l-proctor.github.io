@@ -3,30 +3,24 @@ title: "Resume"
 toc: true
 ---
 
-[📄 Download PDF](assets/resume.pdf){.btn .btn-primary role="button"}
+[📄 Download PDF](assets/Brooke Proctor Resume.pdf){.btn .btn-primary role="button"}
 
-::: {.callout-note appearance="simple"}
-Drop your typeset resume at `assets/resume.pdf` and it appears below. Any PDF
-works tonight — export from Word, Google Docs, or a `vitae`/LaTeX template. The
-web summary below is what recruiters skim; the PDF is what they download.
-:::
-
-<iframe src="assets/resume.pdf" width="100%" height="800px"
+<iframe src="assets/Brooke Proctor Resume.pdf" width="100%" height="800px"
   style="border: 1px solid #ddd; margin-top: 1rem;">
 </iframe>
 
 ## Education
 
 **M.S. Data Science** — Willamette University, Salem, OR *(2026)*
-**B.S. \[Your Major\]** — \[Your University\], \[City\] *(\[year\])*
+**B.S. Environmental Science and Data Science** — Willamette University, Salem, OR *(2026)*
 
 ## Skills
 
 | Area | Tools |
 |------|-------|
 | **Languages** | R, Python, SQL |
-| **Data & ML** | \[tidyverse / pandas, scikit-learn, ...\] |
-| **Workflow** | Git, Quarto, \[Docker, cloud, ...\] |
+| **Data & ML** | tidyverse, pandas, scikit-learn, keras |
+| **Workflow** | Git, Quarto, Docker|
 | **Communication** | Technical writing, data visualization |
 
 ## Experience
@@ -36,11 +30,23 @@ web summary below is what recruiters skim; the PDF is what they download.
 - Accomplishment framed as impact, not a task description.
 - Another accomplishment with a number in it if you have one.
 
+**Geospatial Analyst**, Marion Polk Food Share, Salem, Oregon *May 2026 – August 2026*  
+● Collated data from several government agencies to create a series of maps about food insecurity across Marion-Polk Counties to aid the food share in the identification of food deserts and spatial patterns of food insecurity across the counties, resulting in the adoption of a new mobile pantry site to serve a previously under-resourced area
+
+**Aerial Researcher**, National Science Foundation, Naxos, Greece *May 2024 – July 2024*
+● Documented historic and natural outdoor spaces through the LiDAR and photogrammetric modelling of ancient marble quarry extents to aid the Greek Ministry of Culture in classifying cultural hearths as protected lands to prevent new developments from destroying the quarries 
+● Created a self-owned research project by following a research question with a group of 4 peers to analyze ancient marble quarries to discover the methods and extents of quarrying done in ancient Greece to better understand technologies and cultural significances of the past 
+
+**Lead Catalyst**, Office of Civic Engagement, Salem, Oregon *August 2023 - May 2026*
+● Connected students with community organizations to do volunteer work and internships to support the development of Salem’s community goals, such as housing for all, through facilitating student engagement and learning 
+● Produced dashboards twice a year to detail quantitative data about volunteer work to support reporting initiatives at the university, to receive further funding to spend in the community in the coming years, resulting in a generous private donation of approximately $20,000 
+
+**Data Science Tutor**, QUAD Center, Salem, Oregon *August 2023 - May 2026*
+● Supported the professors in teaching elementary data science and computer science topics to students by hosting office hours and tutoring sessions to target marginalized students in computational fields and provide one-on-one support with difficult topics, as well as encouragement and advice for moving through the courses, resulting in recruitment of majors and more passing grades from students 
+● Attended weekly staff meetings to review statistics and figures about students' attendance at tutoring sessions and develop strategies to improve outreach to those struggling in a course, resulting in an overall increase in QUAD Center usage
+
 ## Projects
 
-**\[Capstone Title\]** — see the [Capstone page](capstone.qmd) for the full story.
+**Protecting Salem’s Ecosystem: Predictive Modeling of Stream Temperatures for the City of Salem** — See the [Capstone page](capstone.qmd) for the full story.
 
-- One line on the problem and your role.
-
-*Placeholders in brackets are fine while you build. Replace them with real,
-defensible entries as they materialize — sparse and true beats full and shaky.*
+- We integrated data from the National Oceanic and Atmospheric Administration, the City of Salem, and CastawayWu into three datasets about weather, stream temperatures, and tree canopies so that the City of Salem can utilize predictions to identify streams at risk of temperature increases.
