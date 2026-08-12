@@ -1,84 +1,63 @@
 ---
-title: "Capstone: [Your Capstone Title]"
-subtitle: "A one-sentence hook: what you built and who it helps."
-date: 2026-07-27
+title: "Capstone: Protecting Salem’s Ecosystem: Predictive Modeling of Stream Temperatures for the City of Salem"
+subtitle: "Supporting the City of Salem's Natural Resources Department in identifying streams that are at risk of temperature increases."
+date: 2026-08-12
 image: projects/capstone/featured.svg
 categories: [capstone, machine-learning, R]
 toc: true
 ---
 
-::: {.callout-note appearance="simple"}
-This is the anchor of your portfolio. A hiring manager who reads only one page
-should read this one. Replace every bracketed placeholder, then delete this note.
-:::
-
 ## The one-liner
 
-> We integrated **\[data sources\]** into **\[dataset\]** so that
-> **\[stakeholder\]** can **\[decision they can now make\]**.
+> We integrated data from the National Oceanic and Atmospheric Administration, the City of Salem, and CastawayWu into three datasets about weather, stream temperatures, and tree canopies so that
+> the City of Salem can utilize predictions to identify streams at risk of temperature increases.
 
-**Role:** \[e.g. I led the data pipeline and validation.\]
-**Team:** \[solo, or name + link teammates.\]
-**Repo:** [github.com/your_github_username/your-capstone-repo](https://github.com/your_github_username/your-capstone-repo)
+**Role:** Data Modeler, Data Analyst
+**Team:** Brooke Proctor, Siera Edwards, and Serenna Walter
+**Repo:** [https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project](https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project)
 
 ## The question
 
 What problem were you solving, and why does it matter to a real stakeholder?
 Two or three sentences. No jargon a hiring manager would have to look up.
 
+Working with the City of Salem to address their concerns regarding rising stream temperatures, we created an iterative series of models to predict stream temperature using a variety of variables. This topic is important because we know that rising temperatures lead to lower dissolved oxygen and increased algal blooms which can impact the local community and their ecosystems. Dissolved oxygen is essential for fish and other aquatic life to continue living, and algal blooms can be toxic to humans and animals. By predicting stream temperatures, the City of Salem can identify streams that are at risk of temperature increases and take action to protect their ecosystems.
+
 ## The data
 
-Where the data came from, how much of it, and the one hard thing about it
-(missingness, joins across sources, scale, privacy). This is your data
-engineering story — the part the repo link backs up.
+Stream Temperature Data: This dataset was sent to us as a comma-delimited file (CSV) with 7543 rows and 5 columns, and had a file size of 426 KB. It was sourced from the CastawayWU Mill Creek Research Project. This dataset contains daily average temperatures, dissolved oxygen readings, and turbidity for two sites along the Mill Creek. The two data collection sites were MIC3, in downtown Salem, and MIC12, located southwest of downtown Salem
+
+The second piece of data that we brought into our project was climate data for Salem from NOAA. This dataset gave us daily information about the location of data collection, the average wind speed, precipitation, if it snowed, snow depth, highest temperature, lowest temperature, and average temperature. This dataset was downloaded as a CSV file with 48,603 rows and 18 columns, and had a file size of 15.1 MB. 
+
+The third data source used in this project contained information on public storm creeks and rivers in Salem, authored by the City of Salem. This dataset contained the locations of all bodies of water in Salem, including the two data collection sites along the Mill Creek from the stream temperature data. This data was downloaded as a shapefile with 2,672 rows and 24 columns, and had a file size of 619 KB. This data can be downloaded from DATASALEM.
+
+The final data source used in the research was tree canopy information from the Tree Plotter Canopy website managed by the City of Salem. This data contained polygons for different levels of tree canopy area across the Salem area. This data was downloaded as a shapefile with 3,649 rows and 18 columns, and had a file size of 3,184 KB.
+
+The most difficult part of engineering the data was creating shapefile joins to get the latitiude and longitude of relevant tree canopy coverage across Salem. This was done using ArcGIS Pro's Buffer tool. In addition, some cleaning was done to trim different data sources to include only information relevant to the project. 
 
 ## The approach
 
-Your method at portfolio depth: shorter than your M4 write-up, longer than a
-tweet. What did you try, what did you keep, and why.
+Linear regression models with coefficient interactions were created iteratively in R, with different data included for each model. The first set of ourliers were removed, because they were a result of an unprecendented heatwave in Salem. After this, different models were created using different combinations of features and interactions. The final model was selected due to it's high R-squared value and low RMSE. This model can be used to predict stream temperatures, and can be used by the City of Salem to identify streams that are at risk of temperature increases.
 
 ## Findings
 
-Lead with your best figure or your architecture diagram.
+Our best model has an R-squared value of .9442, meaning that 94% of the variance in stream temperature can be explained by our model. This model also produced a low RMSE of 2.106. 
 
-![Replace with your key result or system diagram.](projects/capstone/featured.svg){fig-alt="Placeholder capstone figure" width="90%"}
+The pictured plot does not show our best model, but the second best, to allow for predictions to be shown.
 
-State the finding in plain language, then the caveat. Sparse and true beats
-full and shaky.
+![Replace with your key result or system diagram.](projects/capstone/predict_plot.jpg){fig-alt="Placeholder capstone figure" width="90%"}
+
+With the line of best fit (blue) overlaid on the actual historic values for stream temperatures (green), we can see how closely tied they are. This is a visual demonstration of the R-squared value. This graph displays the predictions (pink) into the future for stream temperature, given all values are identical to 2024 aside from the weather temperature, which is steadily increasing at a slope of 2.5 degrees Celsius of warming by 2050. While this pseudo-future data is not highly accurate, the predictions follow the expected sinusoidal pattern.
+
 
 ## The full write-up
 
-Pick the option that matches where your write-up lives, keep one, delete the rest.
 
-::: {.panel-tabset}
+### Published Google Doc
 
-### A · Native Quarto
-
-If your write-up is a `.qmd`, copy it into `projects/capstone/index.qmd` and
-link it, or fold its sections directly into this page. Set `eval: false` (or
-rely on `freeze`) on any chunk that needs data the public repo does not contain.
-
-### B · Embedded PDF
-
-```markdown
-[Download the write-up (PDF)](projects/capstone/writeup.pdf){.btn .btn-primary}
-
-<iframe src="projects/capstone/writeup.pdf" width="100%" height="800px"
-  style="border: 1px solid #ddd;"></iframe>
-```
-
-### C · Published Google Doc
-
-```markdown
-[Read the full write-up](https://docs.google.com/document/d/e/XXXX/pub){.btn .btn-primary}
-
-<iframe src="https://docs.google.com/document/d/e/XXXX/pub?embedded=true"
-  width="100%" height="800px" style="border: 1px solid #ddd;"></iframe>
-```
-
-:::
+[Read the full write-up here](https://docs.google.com/document/d/1-5b2VmHpuZg3rgVxR8TKl9OGzZodKJg7zdW4fq_Lx4g/edit?usp=sharing){.btn .btn-primary}
 
 ## Dig deeper
 
-- 📦 **Code & pipeline:** [your-capstone-repo](https://github.com/your_github_username/your-capstone-repo)
-- 📊 **Slides / poster:** \[link if you have one\]
+- 📦 **Code & pipeline:** [Emerald-Ash-Borer-Capstone-Project](https://github.com/Serenna4/Emerald-Ash-Borer-Capstone-Project)
+- 📊 **Poster:** [Poster Presentation](https://docs.google.com/presentation/d/1yrokVDuboehmXGB3SbasJauDw1_vijpIWRHjAQHDP-w/edit?usp=sharing)
